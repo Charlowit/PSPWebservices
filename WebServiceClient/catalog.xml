@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/Mini_Practica_Web_Services/NewWebService?wsdl" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/Mini_Practica_Web_Services/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/Mini_Practica_Web_Services/NewWebService?xsd=1" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/Mini_Practica_Web_Services/NewWebService.xsd_1.xsd"/>
+    <system systemId="http://localhost:8080/WebServices/NewWebService?wsdl" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/WebServices/NewWebService.wsdl"/>
+    <system systemId="http://localhost:8080/WebServices/NewWebService?xsd=1" uri="xml-resources/web-service-references/NewWebService/wsdl/localhost_8080/WebServices/NewWebService.xsd_1.xsd"/>
+</catalog>

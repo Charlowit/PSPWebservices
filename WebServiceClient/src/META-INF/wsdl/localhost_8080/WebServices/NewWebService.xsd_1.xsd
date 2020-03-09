@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://localizacion/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://localizacion/">
+
+<xs:element name="calculator" type="tns:calculator" />
+
+<xs:element name="calculatorResponse" type="tns:calculatorResponse" />
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:element name="loginuser" type="tns:loginuser" />
+
+<xs:element name="loginuserResponse" type="tns:loginuserResponse" />
+
+<xs:element name="random" type="tns:random" />
+
+<xs:element name="randomResponse" type="tns:randomResponse" />
+
+<xs:element name="smtp" type="tns:smtp" />
+
+<xs:element name="smtpResponse" type="tns:smtpResponse" />
+
+<xs:complexType name="smtp">
+<xs:sequence>
+<xs:element name="destinatario" type="xs:string" minOccurs="0" />
+<xs:element name="asunto" type="xs:string" minOccurs="0" />
+<xs:element name="cuerpo" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="smtpResponse">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="random">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="randomResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calculator">
+<xs:sequence>
+<xs:element name="parametro1" type="xs:string" minOccurs="0" />
+<xs:element name="parametro2" type="xs:string" minOccurs="0" />
+<xs:element name="operador" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="calculatorResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginuser">
+<xs:sequence>
+<xs:element name="login" type="xs:string" minOccurs="0" />
+<xs:element name="password" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="loginuserResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
